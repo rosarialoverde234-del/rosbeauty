@@ -1,5 +1,5 @@
 const ROSBEAUTY_CONFIG = {
-    whatsappNumber: "390000000000",
+    whatsappNumber: "3458307361",
     instagramUrl: "https://www.instagram.com/rosbeauty_04/"
 };
 
