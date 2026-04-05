@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota - ROSBEAUTY</title>
+    <meta name="description" content="Controlla i posti liberi di ROSBEAUTY e invia la tua richiesta di prenotazione.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-blur blur-pink"></div>
+    <div class="bg-blur blur-green"></div>
+
+    <div class="page-shell">
+        <header>
+            <nav class="navbar">
+                <div class="container nav-inner">
+                    <a href="index.html" class="brand">
+                        <span class="brand-mark"></span>
+                        ROSBEAUTY
+                    </a>
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="trattamenti.html">Trattamenti</a>
+                        <a href="prenota.html" class="active">Prenota</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contatti.html">Contatti</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-hero">
+                <div class="container">
+                    <span class="page-breadcrumb">ROSBEAUTY / Prenota</span>
+                    <span class="section-tag">Posti liberi</span>
+                    <h1>Prenota il tuo posto in modo semplice</h1>
+                    <p class="page-note">
+                        Questa pagina sostituisce il classico “Chi siamo” e punta su quello che serve davvero:
+                        disponibilità, richiesta del servizio e conferma rapida.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-tag">Disponibilità esempio</span>
+                        <h2>Posti liberi della settimana</h2>
+                        <p>
+                            Questi orari sono segnaposto eleganti. Poi li possiamo aggiornare con quelli reali ogni settimana.
+                        </p>
+                    </div>
+
+                    <div class="slot-grid">
+                        <article class="slot-card">
+                            <h3>Lunedì</h3>
+                            <p>Disponibilità aperta</p>
+                            <div class="slot-list">
+                                <span class="slot-pill">10:00</span>
+                                <span class="slot-pill">12:30</span>
+                                <span class="slot-pill">16:00</span>
+                            </div>
+                        </article>
+
+                        <article class="slot-card">
+                            <h3>Martedì</h3>
+                            <p>Disponibilità aperta</p>
+                            <div class="slot-list">
+                                <span class="slot-pill">09:30</span>
+                                <span class="slot-pill">15:00</span>
+                                <span class="slot-pill">18:00</span>
+                            </div>
+                        </article>
+
+                        <article class="slot-card">
+                            <h3>Mercoledì</h3>
+                            <p>Giornata quasi piena</p>
+                            <div class="slot-list">
+                                <span class="slot-pill full">Completo</span>
+                            </div>
+                        </article>
+
+                        <article class="slot-card">
+                            <h3>Giovedì</h3>
+                            <p>Disponibilità aperta</p>
+                            <div class="slot-list">
+                                <span class="slot-pill">11:00</span>
+                                <span class="slot-pill">14:30</span>
+                            </div>
+                        </article>
+
+                        <article class="slot-card">
+                            <h3>Venerdì</h3>
+                            <p>Disponibilità aperta</p>
+                            <div class="slot-list">
+                                <span class="slot-pill">09:00</span>
+                                <span class="slot-pill">13:00</span>
+                                <span class="slot-pill">17:30</span>
+                            </div>
+                        </article>
+
+                        <article class="slot-card">
+                            <h3>Sabato</h3>
+                            <p>Ultimi posti</p>
+                            <div class="slot-list">
+                                <span class="slot-pill">10:00</span>
+                                <span class="slot-pill">11:30</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-soft">
+                <div class="container booking-split">
+                    <div class="book-form neon-card">
+                        <span class="section-tag">Richiesta prenotazione</span>
+                        <h2>Compila il modulo</h2>
+
+                        <form class="form-grid" id="bookingForm">
+                            <div class="form-row-2">
+                                <input type="text" name="nome" placeholder="Nome e cognome" required>
+                                <input type="tel" name="telefono" placeholder="Telefono" required>
+                            </div>
+
+                            <div class="form-row-2">
+                                <select name="servizio" required>
+                                    <option selected>Seleziona il servizio</option>
+                                    <option>Trattamento viso</option>
+                                    <option>Trattamento corpo</option>
+                                    <option>Massaggio</option>
+                                    <option>Manicure / Spa</option>
+                                    <option>Semipermanente mani</option>
+                                    <option>Semipermanente piedi</option>
+                                    <option>Refill</option>
+                                    <option>Ricostruzione</option>
+                                    <option>Pedicure estetica</option>
+                                    <option>Pedicure curativa</option>
+                                    <option>Ceretta</option>
+                                    <option>Pacchetto combo</option>
+                                </select>
+                                <input type="date" name="giorno" required>
+                            </div>
+
+                            <div class="form-row-2">
+                                <input type="text" name="orario" placeholder="Orario desiderato" required>
+                                <input type="email" name="email" placeholder="Email opzionale">
+                            </div>
+
+                            <textarea name="note" placeholder="Scrivi qui eventuali note o richieste..."></textarea>
+
+                            <button type="submit" class="btn btn-primary">Invia richiesta</button>
+                            <p class="form-note">Al click su invia si apre WhatsApp con il messaggio già compilato. La prenotazione viene confermata dopo verifica della disponibilità reale.</p>
+                        </form>
+                    </div>
+
+                    <div class="book-panel">
+                        <span class="section-tag">Contatto rapido</span>
+                        <h2>Preferisci WhatsApp?</h2>
+                        <p>
+                            Per un’attività del genere è utilissimo lasciare anche un contatto rapido.
+                            Molte clienti preferiscono scrivere direttamente per confermare orario e servizio.
+                        </p>
+
+                        <ul class="contact-list">
+                            <li>
+                                <strong>Telefono / WhatsApp</strong>
+                                <span>Numero WhatsApp da inserire in site.js</span>
+                            </li>
+                            <li>
+                                <strong>Instagram</strong>
+                                <span>@rosbeauty_04</span>
+                            </li>
+                            <li>
+                                <strong>Nota importante</strong>
+                                <span>Gli orari online servono come richiesta iniziale e vengono confermati manualmente.</span>
+                            </li>
+                        </ul>
+
+                        <div class="inline-actions">
+                            <a href="#" class="btn btn-secondary" data-whatsapp-link>Apri WhatsApp</a>
+                            <a href="contatti.html" class="btn btn-outline">Altri contatti</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <div>
+                    <h3>ROSBEAUTY</h3>
+                    <p>Prenotazione semplice, orari visibili e richiesta rapida del posto libero.</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="trattamenti.html">Trattamenti</a>
+                    <a href="prenota.html">Prenota</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contatti.html">Contatti</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="site.js"></script>
+</body>
+</html>
