@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti - ROSBEAUTY</title>
-    <meta name="description" content="Contatta ROSBEAUTY per informazioni su trattamenti, prezzi, disponibilità e appuntamenti.">
+    <meta name="description" content="Contatta ROSBEAUTY per informazioni e appuntamenti.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +15,8 @@
         <header>
             <nav class="navbar">
                 <div class="container nav-inner">
-                    <a href="index.html" class="brand">
-                        <span class="brand-mark"></span>
-                        ROSBEAUTY
+                    <a href="index.html" class="brand" aria-label="Vai alla home di ROSBEAUTY">
+                        <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="logo-img">
                     </a>
 
                     <div class="nav-links">
@@ -35,52 +34,64 @@
                 <div class="container">
                     <span class="page-breadcrumb">ROSBEAUTY / Contatti</span>
                     <span class="section-tag">Informazioni</span>
-                    <h1>Contatta ROSBEAUTY in modo semplice</h1>
+                    <h1>Contattaci</h1>
                     <p class="page-note">
-                        In questa versione non c’è backend e non c’è prenotazione dal sito: per prezzi,
-                        disponibilità e appuntamenti si passa direttamente dai contatti.
+                        Per ricevere informazioni sui trattamenti o chiedere disponibilità,
+                        puoi scriverci direttamente tramite i nostri contatti.
                     </p>
                 </div>
             </section>
 
             <section class="section">
                 <div class="container contact-split">
-                    <div class="page-card neon-card">
-                        <span class="section-tag">Contatto diretto</span>
-                        <h2>WhatsApp e Instagram</h2>
-                        <p>
-                            Per un’attività come questa è molto più utile un contatto rapido e diretto.
-                            Ho lasciato il sito pronto per aprire WhatsApp con messaggio già compilato.
-                        </p>
-
-                        <div class="inline-actions">
-                            <a href="#" class="btn btn-primary" data-whatsapp-link>Apri WhatsApp</a>
-                            <a href="#" class="btn btn-secondary" data-instagram-link>Apri Instagram</a>
-                        </div>
-                    </div>
-
-                    <div class="page-card">
-                        <span class="section-tag">Info utili</span>
-                        <h2>Canali di contatto</h2>
+                    <div class="contact-info-box neon-card">
+                        <span class="section-tag">Contatti diretti</span>
+                        <h2>Scrivici o chiamaci</h2>
 
                         <ul class="contact-list">
                             <li>
                                 <strong>Telefono / WhatsApp</strong>
-                                <span>Inserisci qui il numero reale in <code>site.js</code></span>
+                                <span>+39 000 000 0000</span>
                             </li>
+
+                            <li>
+                                <strong>Email</strong>
+                                <span>info@rosbeauty.it</span>
+                            </li>
+
                             <li>
                                 <strong>Instagram</strong>
                                 <span>@rosbeauty_04</span>
                             </li>
+
                             <li>
-                                <strong>Città</strong>
+                                <strong>Indirizzo</strong>
                                 <span>Catania</span>
                             </li>
+
                             <li>
-                                <strong>Prezzi e disponibilità</strong>
-                                <span>Richiedibili direttamente tramite messaggio.</span>
+                                <strong>Orari</strong>
+                                <span>Da definire</span>
                             </li>
                         </ul>
+
+                        <div class="inline-actions">
+                            <a href="#" class="btn btn-primary">Apri WhatsApp</a>
+                            <a href="#" class="btn btn-secondary">Instagram</a>
+                        </div>
+                    </div>
+
+                    <div class="content-block glass-card">
+                        <span class="section-tag">ROSBEAUTY</span>
+                        <h2>Un piccolo angolo dedicato alla tua bellezza</h2>
+                        <p>
+                            ROSBEAUTY nasce per offrire un’esperienza fatta di cura,
+                            attenzione ai dettagli e benessere.
+                        </p>
+                        <p>
+                            Per qualsiasi informazione sui servizi, sui pacchetti speciali
+                            o sui trattamenti disponibili, puoi contattarci direttamente.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -88,39 +99,38 @@
             <section class="section section-soft">
                 <div class="container">
                     <div class="section-heading">
-                        <span class="section-tag">Messaggio rapido</span>
-                        <h2>Richiedi informazioni in pochi secondi</h2>
+                        <span class="section-tag">Servizi</span>
+                        <h2>Su cosa puoi chiedere informazioni</h2>
                         <p>
-                            Il modulo qui sotto non salva nulla su database: serve solo a preparare automaticamente
-                            un messaggio WhatsApp ordinato con i dati principali.
+                            Puoi scriverci per conoscere meglio i trattamenti, i pacchetti e i dettagli dei servizi.
                         </p>
                     </div>
 
-                    <div class="page-card neon-card">
-                        <form class="form-grid" id="contactForm">
-                            <div class="form-row-2">
-                                <input type="text" name="nome" placeholder="Nome e cognome" required>
-                                <input type="tel" name="telefono" placeholder="Telefono">
-                            </div>
+                    <div class="info-grid">
+                        <article class="contact-card">
+                            <div class="icon-circle">✿</div>
+                            <h3>Trattamenti viso</h3>
+                            <p>
+                                Pulizia viso profonda, purificante, idratante e illuminante.
+                            </p>
+                        </article>
 
-                            <div class="form-row-2">
-                                <input type="email" name="email" placeholder="Email opzionale">
-                                <select name="servizio">
-                                    <option value="">Servizio di interesse</option>
-                                    <option>Trattamenti viso</option>
-                                    <option>Trattamenti corpo</option>
-                                    <option>Massaggi</option>
-                                    <option>Manicure e pedicure</option>
-                                    <option>Epilazione</option>
-                                    <option>Pacchetti speciali</option>
-                                </select>
-                            </div>
+                        <article class="contact-card">
+                            <div class="icon-circle">❀</div>
+                            <h3>Massaggi e corpo</h3>
+                            <p>
+                                Relax, drenante / anticellulite e decontratturante.
+                            </p>
+                        </article>
 
-                            <textarea name="messaggio" placeholder="Scrivi qui il tuo messaggio o la tua richiesta..."></textarea>
-
-                            <button type="submit" class="btn btn-primary">Invia su WhatsApp</button>
-                            <p class="form-note">Al click si apre WhatsApp con il testo già compilato.</p>
-                        </form>
+                        <article class="contact-card">
+                            <div class="icon-circle">✦</div>
+                            <h3>Manicure e pedicure</h3>
+                            <p>
+                                Manicure spa, semipermanente, refill, ricostruzione,
+                                colata e pedicure.
+                            </p>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -128,9 +138,11 @@
 
         <footer>
             <div class="container footer-inner">
-                <div>
-                    <h3>ROSBEAUTY</h3>
-                    <p>Contatti diretti e richiesta informazioni rapida tramite WhatsApp o Instagram.</p>
+                <div class="footer-brand">
+                    <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="footer-logo">
+                    <p>
+                        Contatti e informazioni per accompagnarti nella scelta del trattamento più adatto.
+                    </p>
                 </div>
 
                 <div class="footer-links">
@@ -142,6 +154,5 @@
             </div>
         </footer>
     </div>
-    <script src="site.js"></script>
 </body>
 </html>

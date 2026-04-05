@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - ROSBEAUTY</title>
-    <meta name="description" content="Gallery di ROSBEAUTY: logo, stile del brand, contenuti social e spazio per i lavori reali.">
+    <meta name="description" content="Scopri la gallery di ROSBEAUTY e l’atmosfera del suo spazio dedicato alla bellezza.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +15,8 @@
         <header>
             <nav class="navbar">
                 <div class="container nav-inner">
-                    <a href="index.html" class="brand">
-                        <span class="brand-mark"></span>
-                        ROSBEAUTY
+                    <a href="index.html" class="brand" aria-label="Vai alla home di ROSBEAUTY">
+                        <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="logo-img">
                     </a>
 
                     <div class="nav-links">
@@ -31,49 +30,44 @@
         </header>
 
         <main>
-            <section class="page-hero">
+            <section class="page-hero compact">
                 <div class="container">
                     <span class="page-breadcrumb">ROSBEAUTY / Gallery</span>
-                    <span class="section-tag">Immagine del brand</span>
-                    <h1>Una gallery pulita, elegante e pronta a crescere</h1>
+                    <span class="section-tag">Immagini &amp; atmosfera</span>
+                    <h1>Uno spazio pensato per farti sentire bene</h1>
                     <p class="page-note">
-                        Qui ho lasciato il logo e il post dei servizi come base visiva. Poi potrai aggiungere foto reali di ambiente,
-                        trattamenti, mani, piedi e dettagli del lavoro.
+                        Una raccolta di immagini, dettagli e ispirazioni per raccontare l’universo ROSBEAUTY.
                     </p>
                 </div>
             </section>
 
             <section class="section">
-                <div class="container gallery-intro">
-                    <div class="service-poster">
-                        <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="poster-image">
-                        <div class="poster-caption">Logo del brand inserito come riferimento estetico principale.</div>
-                    </div>
+                <div class="container">
+                    <div class="gallery-layout">
+                        <div class="gallery-box tall"><div class="gallery-label">Logo &amp; identità</div></div>
+                        <div class="gallery-box"><div class="gallery-label">Trattamenti viso</div></div>
+                        <div class="gallery-box"><div class="gallery-label">Benessere corpo</div></div>
 
-                    <div class="service-poster">
-                        <img src="images/servizi.jpeg" alt="Post servizi ROSBEAUTY" class="poster-image">
-                        <div class="poster-caption">Il post dei servizi aiuta a dare continuità visiva al profilo e al sito.</div>
+                        <div class="gallery-box"><div class="gallery-label">Mani e piedi</div></div>
+                        <div class="gallery-box tall"><div class="gallery-label">Dettagli beauty</div></div>
+                        <div class="gallery-box"><div class="gallery-label">Atmosfera</div></div>
+
+                        <div class="gallery-box"><div class="gallery-label">Cura dei dettagli</div></div>
+                        <div class="gallery-box"><div class="gallery-label">Pacchetti speciali</div></div>
+                        <div class="gallery-box"><div class="gallery-label">Momenti di relax</div></div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section-soft">
+            <section class="cta-section">
                 <div class="container">
-                    <div class="section-heading">
-                        <span class="section-tag">Spazi pronti</span>
-                        <h2>Qui puoi mettere le foto vere del lavoro</h2>
+                    <div class="cta-box neon-card">
+                        <span class="section-tag">Contatti</span>
+                        <h2>Hai bisogno di informazioni?</h2>
                         <p>
-                            Questa sezione resta pronta per essere riempita con immagini reali, così il sito cresce senza perdere coerenza.
+                            Scrivici per conoscere meglio i servizi disponibili e ricevere tutte le informazioni che ti servono.
                         </p>
-                    </div>
-
-                    <div class="gallery-grid">
-                        <article class="gallery-card large"><span class="gallery-label">Postazione beauty</span></article>
-                        <article class="gallery-card"><span class="gallery-label">Dettagli prodotti</span></article>
-                        <article class="gallery-card"><span class="gallery-label">Trattamento viso</span></article>
-                        <article class="gallery-card"><span class="gallery-label">Massaggio / relax</span></article>
-                        <article class="gallery-card large"><span class="gallery-label">Manicure e pedicure</span></article>
-                        <article class="gallery-card"><span class="gallery-label">Prima e dopo</span></article>
+                        <a href="contatti.html" class="btn btn-primary">Vai ai contatti</a>
                     </div>
                 </div>
             </section>
@@ -81,9 +75,11 @@
 
         <footer>
             <div class="container footer-inner">
-                <div>
-                    <h3>ROSBEAUTY</h3>
-                    <p>Gallery impostata sul look del brand, pronta per le immagini vere del centro e dei trattamenti.</p>
+                <div class="footer-brand">
+                    <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="footer-logo">
+                    <p>
+                        Una gallery pensata per raccontare stile, delicatezza e benessere.
+                    </p>
                 </div>
 
                 <div class="footer-links">
@@ -95,6 +91,5 @@
             </div>
         </footer>
     </div>
-    <script src="site.js"></script>
 </body>
 </html>
