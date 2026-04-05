@@ -1,35 +1,259 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ROSBEAUTY</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSBEAUTY - Home</title>
+    <meta name="description" content="ROSBEAUTY è uno spazio dedicato alla cura della persona, alla bellezza e al benessere.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-shell">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="grid-overlay"></div>
 
-<nav class="navbar">
-    <div class="nav-inner">
-        <img src="images/logo.jpeg" class="logo-img">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="trattamenti.html">Trattamenti</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contatti.html">Contatti</a>
-        </div>
+        <header class="site-header">
+            <nav class="navbar">
+                <div class="container nav-inner">
+                    <a href="index.html" class="brand" aria-label="Vai alla home di ROSBEAUTY">
+                        <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="logo-img">
+                    </a>
+
+                    <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="nav-links">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="trattamenti.html">Trattamenti</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contatti.html">Contatti</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy reveal">
+                        <span class="hero-badge">ROSBEAUTY</span>
+                        <h1>
+                            Bellezza, <span class="gradient-text">cura</span> e benessere
+                        </h1>
+                        <p>
+                            Uno spazio pensato per valorizzarti con delicatezza, attenzione ai dettagli
+                            e trattamenti studiati per farti sentire bene ogni giorno.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="contatti.html" class="btn btn-primary">Contattaci</a>
+                            <a href="trattamenti.html" class="btn btn-secondary">Scopri i servizi</a>
+                        </div>
+
+                        <div class="hero-mini-info">
+                            <div class="mini-pill">Viso</div>
+                            <div class="mini-pill">Corpo</div>
+                            <div class="mini-pill">Mani & Piedi</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal reveal-delay-1">
+                        <div class="hero-main-card neon-card floating-card">
+                            <div class="hero-card-top">
+                                <span class="hero-card-chip">Beauty Studio</span>
+                                <span class="hero-card-chip muted-chip">Cura su misura</span>
+                            </div>
+
+                            <h2>Un ambiente delicato e professionale</h2>
+                            <p>
+                                Trattamenti viso, corpo, manicure, pedicure, epilazione e pacchetti
+                                speciali per prenderti cura di te con eleganza.
+                            </p>
+
+                            <div class="hero-stats">
+                                <div class="stat-box">
+                                    <strong>Viso</strong>
+                                    <span>Pulizia e trattamenti</span>
+                                </div>
+                                <div class="stat-box">
+                                    <strong>Corpo</strong>
+                                    <span>Massaggi e relax</span>
+                                </div>
+                                <div class="stat-box">
+                                    <strong>Beauty</strong>
+                                    <span>Mani, piedi, epilazione</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge floating-badge-1">Glow Beauty</div>
+                        <div class="floating-badge floating-badge-2">Rosbeauty</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-tag">Servizi principali</span>
+                        <h2>Trattamenti pensati per il tuo benessere</h2>
+                        <p>
+                            Una selezione di servizi dedicati alla cura della persona, con un approccio
+                            attento, delicato e professionale.
+                        </p>
+                    </div>
+
+                    <div class="cards-grid">
+                        <article class="service-card reveal reveal-delay-1">
+                            <div class="icon-circle">✿</div>
+                            <h3>Trattamenti viso</h3>
+                            <p>Pulizia viso profonda, purificante, idratante e illuminante.</p>
+                        </article>
+
+                        <article class="service-card reveal reveal-delay-2">
+                            <div class="icon-circle">❀</div>
+                            <h3>Trattamenti corpo</h3>
+                            <p>Massaggio relax, drenante / anticellulite e decontratturante.</p>
+                        </article>
+
+                        <article class="service-card reveal reveal-delay-3">
+                            <div class="icon-circle">✦</div>
+                            <h3>Mani e piedi</h3>
+                            <p>Manicure spa, semipermanente, refill, ricostruzione e pedicure.</p>
+                        </article>
+
+                        <article class="service-card reveal reveal-delay-4">
+                            <div class="icon-circle">✧</div>
+                            <h3>Epilazione</h3>
+                            <p>Ceretta completa e a zone, baffetti e sopracciglia.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-soft">
+                <div class="container split-showcase">
+                    <div class="showcase-text reveal">
+                        <span class="section-tag">Pacchetti speciali</span>
+                        <h2>Più trattamenti, un’unica esperienza</h2>
+                        <p>
+                            ROSBEAUTY propone anche combinazioni pensate per chi desidera prendersi
+                            un momento completo di cura, relax e attenzione alla persona.
+                        </p>
+                        <p>
+                            Ogni trattamento viene svolto in un’atmosfera luminosa, accogliente e ordinata.
+                        </p>
+
+                        <div class="inline-actions">
+                            <a href="trattamenti.html" class="btn btn-primary">Vedi il listino</a>
+                            <a href="gallery.html" class="btn btn-outline">Guarda la gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="showcase-stack reveal reveal-delay-1">
+                        <div class="feature-box glass-card neon-card">
+                            <h3>Combo Mani & Piedi</h3>
+                            <p>Manicure, pedicure estetica e semipermanente per un risultato completo.</p>
+                        </div>
+
+                        <div class="feature-box glass-card">
+                            <h3>Combo Ceretta + Massaggio</h3>
+                            <p>Una soluzione ideale per unire relax, ordine e sensazione di freschezza.</p>
+                        </div>
+
+                        <div class="feature-box glass-card">
+                            <h3>Combo Viso & Corpo</h3>
+                            <p>Un percorso dedicato a chi vuole concedersi un momento di benessere totale.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section marquee-section">
+                <div class="marquee-wrap">
+                    <div class="marquee-track">
+                        <span>ROSBEAUTY</span>
+                        <span>BEAUTY STUDIO</span>
+                        <span>BELLEZZA & BENESSERE</span>
+                        <span>ROSBEAUTY</span>
+                        <span>BEAUTY STUDIO</span>
+                        <span>BELLEZZA & BENESSERE</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-tag">Atmosfera</span>
+                        <h2>Uno spazio curato in ogni dettaglio</h2>
+                        <p>
+                            Un’estetica pulita, femminile e luminosa, pensata per trasmettere subito
+                            ordine, eleganza e professionalità.
+                        </p>
+                    </div>
+
+                    <div class="combo-grid">
+                        <article class="combo-card neon-card reveal reveal-delay-1">
+                            <span class="combo-label">Accoglienza</span>
+                            <h3>Ambiente delicato</h3>
+                            <p>Uno spazio pensato per farti sentire a tuo agio dal primo momento.</p>
+                        </article>
+
+                        <article class="combo-card reveal reveal-delay-2">
+                            <span class="combo-label">Cura</span>
+                            <h3>Dettagli ordinati</h3>
+                            <p>Ogni trattamento viene accompagnato da attenzione, precisione e stile.</p>
+                        </article>
+
+                        <article class="combo-card reveal reveal-delay-3">
+                            <span class="combo-label">Benessere</span>
+                            <h3>Relax e immagine</h3>
+                            <p>Un’esperienza che unisce estetica, benessere e tempo dedicato a te.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-box neon-card reveal">
+                        <span class="section-tag">Contatti</span>
+                        <h2>Prenota il tuo momento di benessere</h2>
+                        <p>
+                            Scrivici per ricevere informazioni sui servizi, richiedere disponibilità
+                            o conoscere meglio i trattamenti ROSBEAUTY.
+                        </p>
+                        <a href="contatti.html" class="btn btn-primary">Vai ai contatti</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <img src="images/logo.jpeg" alt="Logo ROSBEAUTY" class="footer-logo">
+                    <p>
+                        ROSBEAUTY è uno spazio dedicato a bellezza, benessere e cura della persona.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="trattamenti.html">Trattamenti</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contatti.html">Contatti</a>
+                </div>
+            </div>
+        </footer>
     </div>
-</nav>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Placeholder Titolo</h1>
-        <p>Placeholder testo descrittivo breve</p>
-        <div class="hero-buttons">
-            <button class="btn-primary">CTA</button>
-            <button class="btn-secondary">Altro</button>
-        </div>
-    </div>
-</section>
-
+    <script src="site.js"></script>
 </body>
 </html>
